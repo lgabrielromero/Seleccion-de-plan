@@ -1,0 +1,119 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #60A9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.panel{
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+.pricing-plan{
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child{
+    border-bottom: none;
+}
+
+.pricing-img{
+    margin-bottom: 25px;
+    max-width: 100%;
+
+}
+
+.pricing-header{
+    margin: 0px;
+    color: #888888;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.pricing-features{
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+.pricing-features-item{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+
+}
+
+.pricing-price{
+    color: #016ff9;
+    font-size: 2em;
+    font-weight: 700;
+    display: block;
+}
+
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-button{
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #348efe;
+    margin: 25px 0;
+    padding: 15px 35px;
+    display: inline-block;
+}
+
+.pricing-button:focus, .pricing-button:hover{
+    background-color: #e1f1ff;
+    transition: 200ms ease-in-out;
+}
+
+.pricing-button.is-featured{
+    background-color: #48AAFF;
+    color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+    background-color: #269aff;
+    transition: 200ms ease-in-out;
+}
+
+@media (min-width: 900px){
+    .panel{
+        flex-direction: row;
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+    }
+
+}
